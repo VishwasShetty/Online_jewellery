@@ -7,6 +7,8 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            height:250px;
+            width:250px;
             
            -webkit-filter: grayscale(0.1%);
         }
@@ -108,7 +110,7 @@ $i=1;
                 <div class="medium-4 columns">
                     <h4>{{$product->title}}</h4>   
                 <a href="/show/{{$product->id}}">
-                      <img class="thumbnail" src="/storage/jewellers/{{$product->image1}}" alt="{{$product->title}}" height="250px" width="300px">
+                      <img class="thumbnail" src="/storage/jewellers/{{$product->image1}}" alt="{{$product->title}}">
                             </a>
                             @if (Route::has('login'))
                               @auth

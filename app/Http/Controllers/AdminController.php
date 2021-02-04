@@ -30,16 +30,16 @@ class AdminController extends Controller
 
      public function store(Request $request)
   {
-   $this->validate($request,[
-     'type'=>['string','required'],
-     'title'=>['required'],
-     'discription'=>['required','max:160'],
-     'price'=>['required'],
-     'image1'=>['image'],
-     'image2'=>['image'],
-     'image3'=>['image'],
-     'image4'=>['image'],
-   ]);
+  //  $this->validate($request,[
+  //    'type'=>['string','required'],
+  //    'title'=>['required'],
+  //    'discription'=>['required','max:160'],
+  //    'price'=>['required'],
+  //    'image1'=>['image'],
+  //    'image2'=>['image'],
+  //    'image3'=>['image'],
+  //    'image4'=>['image'],
+  //  ]);
       $dis=$request->input('discount');
       $yes="Yes";
       if(strcmp($dis,$yes)!==0)
